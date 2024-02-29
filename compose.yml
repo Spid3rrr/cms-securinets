@@ -1,0 +1,25 @@
+services:
+  web_app:
+    build: ./app
+    depends_on:
+      - sql_db
+    ports:
+      - "80:80"
+    networks:
+      - default
+
+  sql_db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 59aQ/SBGTby-mtj*
+      MYSQL_DATABASE: cms
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
