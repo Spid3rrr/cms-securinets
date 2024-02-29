@@ -97,7 +97,7 @@ while($row=mysql_fetch_array($query))
 											<td><?php echo htmlentities($row['quantity']);?></td>
 											<td><?php echo htmlentities($row['quantity']*$row['productprice']);?></td>
 											<td><?php echo htmlentities($row['orderdate']);?></td>
-											<td>   <a href="javascript:void(0);" onClick="popUpWindow('http://172.16.50.166/shopping/admin/updateorder.php?oid=<?php echo htmlentities($row['id']);?>');" title="Update order"><i class="icon-edit"></i></a>
+											<td>   <a href="javascript:void(0);" onClick="popUpWindow('/shopping/admin/updateorder.php?oid=<?php echo htmlentities($row['id']);?>');" title="Update order"><i class="icon-edit"></i></a>
 											</td>
 											</tr>
 

@@ -144,11 +144,11 @@ while($rw=mysqli_fetch_array($ret))
 											<?php if($row['status']=="Traitéé"){
 
 												} else {?>
-<a href="javascript:void(0);" onClick="popUpWindow('http://172.16.50.166/complaint-management-system/Complaint%20Management%20System/admin/updatecomplaint.php?cid=<?php echo htmlentities($row['complaintNumber']);?>');" title="Update order">
+<a href="javascript:void(0);" onClick="popUpWindow('/admin/updatecomplaint.php?cid=<?php echo htmlentities($row['complaintNumber']);?>');" title="Update order">
 											 <button type="button" class="btn btn-primary">Take Action</button></td>
 											</a><?php } ?></td>
 											<td colspan="4"> 
-											<a href="javascript:void(0);" onClick="popUpWindow('http://172.16.50.166/complaint-management-system/Complaint%20Management%20System/admin/updatecomplaint.php?uid=<?php echo htmlentities($row['userId']);?>');" title="Update order">
+											<a href="javascript:void(0);" onClick="popUpWindow('/admin/updatecomplaint.php?uid=<?php echo htmlentities($row['userId']);?>');" title="Update order">
 											 <button type="button" class="btn btn-primary">voir les Details de l'utulisateur</button></a></td>
 											
 										</tr>

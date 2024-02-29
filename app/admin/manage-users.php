@@ -89,7 +89,7 @@ while($row=mysqli_fetch_array($query))
 										
 											<td><?php echo htmlentities($row['regDate']);?></td>
 
-											<td><a href="javascript:void(0);" onClick="popUpWindow('http://172.16.50.166/complaint-management-system/Complaint%20Management%20System/admin/updatecomplaint.php?uid=<?php echo htmlentities($row['id']);?>');" title="Update order">
+											<td><a href="javascript:void(0);" onClick="popUpWindow('/admin/updatecomplaint.php?uid=<?php echo htmlentities($row['id']);?>');" title="Update order">
 											 <button type="button" class="btn btn-primary">Voir details</button>
 											</a></td>
 											

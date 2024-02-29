@@ -39,7 +39,7 @@ CREATE TABLE `admin` (
 --
  
 INSERT INTO `admin` (`id`, `username`, `password`, `updationDate`) VALUES
-(1, 'admin', '0192023a7bbd73250516f069df18b500', '30-05-2023 07:12:59 PM');
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', '30-05-2023 07:12:59 PM');
  
 -- --------------------------------------------------------
  

@@ -15,8 +15,6 @@ services:
       MYSQL_DATABASE: cms
     volumes:
       - ./db:/docker-entrypoint-initdb.d
-    ports:
-      - "3306:3306"
     networks:
       - default
 
